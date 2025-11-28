@@ -17,14 +17,14 @@
         <div class="h-100 p-5 text-white bg-dark rounded-3">
             <h2>Sobre mi</h2>
             <p>M'apassiona la tecnologia i el desenvolupament de programari. Estic constantment aprenent noves eines i frameworks per millorar les meves habilitats.</p>
-            <button class="btn btn-outline-light" type="button">Saber-ne més</button>
+            <a href="{{ route('SobreMi') }}" class="btn btn-primary btn-lg" type="button">Sobre mi</a>
         </div>
     </div>
     <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
             <h2>Últims avenços</h2>
             <p>Actualment estic treballant en aprofundir els meus coneixements sobre Laravel 11 i l'ecosistema de PHP modern.</p>
-            <button class="btn btn-outline-secondary" type="button">Veure Blog</button>
+            <a href="{{ route('SobreMi') }}" class="btn btn-primary btn-lg" type="button">Sobre mi</a>
         </div>
     </div>
 </div>

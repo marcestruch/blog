@@ -7,10 +7,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('inici') ? 'active' : '' }}" href="{{ route('inici') }}">Inici</a>
+                    <a class="nav-link {{ setActive('inici') }}" href="{{ route('inici') }}">Inici</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('posts_llistat') ? 'active' : '' }}" href="{{ route('posts_llistat') }}">Llistat de posts</a>
+                    <a class="nav-link {{ setActive('posts_llistat') }}" href="{{ route('posts_llistat') }}">Llistat de posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ setActive('SobreMi') }}" href="{{ route('SobreMi') }}">Sobre Mi</a>
                 </li>
             </ul>
         </div>

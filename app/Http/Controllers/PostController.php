@@ -21,17 +21,62 @@ class PostController extends Controller
         ]
     ];
 
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
-        return view('posts.llistat', ['projects' => $this->projects]);
+        return view('posts.index', ['projects' => $this->projects]);
     }
 
-    public function show($id)
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return redirect('/');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
     {
         if (!array_key_exists($id, $this->projects)) {
             abort(404);
         }
+        return view('posts.show', ['project' => $this->projects[$id], 'id' => $id]);
+    }
 
-        return view('posts.fitxa', ['project' => $this->projects[$id], 'id' => $id]);
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        return redirect('/');
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
     }
 }

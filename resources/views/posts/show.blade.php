@@ -6,7 +6,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('inici') }}">Inici</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('posts_llistat') }}">Projectes</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('posts.index') }}">Projectes</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{ $project['title'] }}</li>
     </ol>
 </nav>
@@ -25,7 +25,7 @@
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
             <a href="{{ $project['url'] }}" class="btn btn-dark me-md-2" target="_blank">Veure a GitHub</a>
-            <a href="{{ route('posts_llistat') }}" class="btn btn-outline-secondary">Tornar al llistat</a>
+            <a href="{{ route('posts.index') }}" class="btn btn-outline-secondary">Tornar al llistat</a>
         </div>
     </div>
 </div>

@@ -15,7 +15,7 @@
                 <p class="card-text">{{ $project['description'] }}</p>
             </div>
             <div class="card-footer bg-transparent border-top-0">
-                <a href="{{ route('posts_fitxa', $id) }}" class="btn btn-primary w-100">Veure Detalls</a>
+                <a href="{{ route('posts.show', $id) }}" class="btn btn-primary w-100">Veure Detalls</a>
             </div>
         </div>
     </div>

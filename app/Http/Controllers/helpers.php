@@ -6,3 +6,10 @@ if (! function_exists('setActive')) {
         return request()->routeIs($routeName) ? 'active' : '';
     }
 }
+
+if (!function_exists('fechaActual')) {
+    function fechaActual($format)
+    {
+        return date($format);
+    }
+}

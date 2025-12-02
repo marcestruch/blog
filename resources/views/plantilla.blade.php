@@ -11,6 +11,12 @@
 <body>
     @include('partials.nav')
 
+    <div class="container mt-2">
+        <div class="text-end">
+            {{ fechaActual('d/m/Y') }}
+        </div>
+    </div>
+
     <div class="container mt-4">
         @yield('contingut')
     </div>

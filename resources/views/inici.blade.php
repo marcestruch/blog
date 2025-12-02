@@ -7,7 +7,7 @@
     <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Benvingut al meu Portfoli</h1>
         <p class="col-md-8 fs-4">Hola! Sóc Marc, i aquest és el meu blog personal on compartixc els meus projectes de desenvolupament web, experiments amb Laravel, i molt més.</p>
-        <a href="{{ route('posts_llistat') }}" class="btn btn-primary btn-lg" type="button">Veure Projectes</a>
+        <a href="{{ route('posts.index') }}" class="btn btn-primary btn-lg" type="button">Veure Projectes</a>
         <a href="https://github.com/marcestruch" target="_blank" class="btn btn-dark btn-lg" type="button"><i class="bi bi-github"></i> El meu GitHub</a>
     </div>
 </div>

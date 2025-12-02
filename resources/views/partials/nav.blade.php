@@ -10,7 +10,7 @@
                     <a class="nav-link {{ setActive('inici') }}" href="{{ route('inici') }}">Inici</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ setActive('posts_llistat') }}" href="{{ route('posts_llistat') }}">Llistat de posts</a>
+                    <a class="nav-link {{ setActive('posts.index') }}" href="{{ route('posts.index') }}">Llistat de posts</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ setActive('SobreMi') }}" href="{{ route('SobreMi') }}">Sobre Mi</a>
